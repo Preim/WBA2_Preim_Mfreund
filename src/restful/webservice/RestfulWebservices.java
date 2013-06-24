@@ -31,10 +31,8 @@ import restful.webservice.resources.users.Users.User.StreamChannel.ChannelDescri
 @Path("/Stream")
 public class RestfulWebservices
 {
-	//private static final String users_file = "Z:/workspace/phase2/src/restful/webservice/resources/users/Users.xml"; // FH
-	//private static final String topics_file = "Z:/workspace/phase2/src/restful/webservice/resources/topics/Topics.xml"; // FH
-	private static final String users_file = "e:/=Wichtige Sachen=/Studium/Fächer/4. Semester/Webbasierte Anwendungen II/p2/src/restful/webservice/resources/users/Users.xml"; // zu Hause
-	private static final String topics_file = "e:/=Wichtige Sachen=/Studium/Fächer/4. Semester/Webbasierte Anwendungen II/p2/src/restful/webservice/resources/topics/Topics.xml"; // zu Hause
+	private static final String users_file = "xml/Users.xml";
+	private static final String topics_file = "xml/Topics.xml";
 	
 	//****************************************************************************************************
 	//

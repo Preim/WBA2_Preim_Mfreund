@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="Users">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="User" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Login">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="LoginName">
+											<xs:simpleType>
+												<xs:restriction base="xs:string">
+													<xs:pattern value="[a-zA-Z0-9]*"/>
+												</xs:restriction>
+											</xs:simpleType>
+										</xs:element>
+						                <xs:element name="LoginPassword">
+											<xs:simpleType>
+												<xs:restriction base="xs:string">
+													<xs:minLength value="3"/>
+													<xs:maxLength value="15"/>
+													<xs:pattern value="[a-zA-Z0-9]*"/>
+												</xs:restriction>
+											</xs:simpleType>
+										</xs:element>	
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="UserID" type="xs:int" />
+							<xs:element name="UserStreamChannelName" type="xs:string" />
+							<xs:element name="UserInformation">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="FirstName">
+											<xs:simpleType>
+												<xs:restriction base="xs:string">
+													<xs:pattern value="[a-zA-Z]*"/>
+												</xs:restriction>
+											</xs:simpleType>
+										</xs:element>
+										<xs:element name="LastName">
+											<xs:simpleType>
+												<xs:restriction base="xs:string">
+													<xs:pattern value="[a-zA-Z]*"/>
+												</xs:restriction>
+											</xs:simpleType>
+										</xs:element>
+										<xs:element name="Birthday" type="xs:date" />
+										<xs:element name="City">
+											<xs:simpleType>
+												<xs:restriction base="xs:string">
+													<xs:pattern value="[a-zA-Z]*"/>
+												</xs:restriction>
+											</xs:simpleType>
+										</xs:element>
+										<xs:element name="Country">
+											<xs:simpleType>
+												<xs:restriction base="xs:string">
+													<xs:pattern value="[a-zA-Z]*"/>
+												</xs:restriction>
+											</xs:simpleType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="StreamChannel">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="ChannelTopic">
+											<xs:simpleType>
+												<xs:restriction base="xs:string">
+													<xs:pattern value="[a-zA-Z0-9]*"/>
+												</xs:restriction>
+											</xs:simpleType>
+										</xs:element>
+										<xs:element name="ChannelDescription">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="ChannelHeadline" type="xs:string" />
+													<xs:element name="ChannelInformation" type="xs:string" />
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="ChannelComments">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="ChannelComment" maxOccurs="unbounded">
+														<xs:complexType>
+															<xs:sequence>
+																<xs:element name="CommentID" type="xs:int" />
+																<xs:element name="CommentDate" type="xs:date" />
+																<xs:element name="CommentData">
+																	<xs:complexType>
+																		<xs:choice>
+																			<xs:element name="CommentHeadline" type="xs:string" />
+																			<xs:element name="CommentText" type="xs:string" />
+																		</xs:choice>
+																	</xs:complexType>
+																</xs:element>
+															</xs:sequence>
+														</xs:complexType>
+													</xs:element>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="TotalViewerCount">
+											<xs:simpleType>
+												<xs:restriction base="xs:int">
+												</xs:restriction>
+											</xs:simpleType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

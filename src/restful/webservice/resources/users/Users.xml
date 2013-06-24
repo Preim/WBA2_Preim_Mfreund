@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Users>
+    <User>
+        <Login>
+            <LoginName>Michael</LoginName>
+            <LoginPassword>123</LoginPassword>
+        </Login>
+        <UserID>11</UserID>
+        <UserStreamChannelName>Michael</UserStreamChannelName>
+        <UserInformation>
+            <FirstName>Michael</FirstName>
+            <LastName>Freund</LastName>
+            <Birthday>2013-06-23+02:00</Birthday>
+            <City>Gummersbach</City>
+            <Country>Deutschland</Country>
+        </UserInformation>
+        <StreamChannel>
+            <ChannelTopic>lol</ChannelTopic>
+            <ChannelDescription>
+                <ChannelHeadline>lol</ChannelHeadline>
+                <ChannelInformation>lol</ChannelInformation>
+            </ChannelDescription>
+            <ChannelComments>
+                <ChannelComment>
+                    <CommentID>1</CommentID>
+                    <CommentDate>2013-06-24+02:00</CommentDate>
+                    <CommentData>
+                        <CommentHeadline>sd</CommentHeadline>
+                        <CommentText>sdsd</CommentText>
+                    </CommentData>
+                </ChannelComment>
+            </ChannelComments>
+            <TotalViewerCount>0</TotalViewerCount>
+        </StreamChannel>
+    </User>
+    <User>
+        <Login>
+            <LoginName>user1</LoginName>
+            <LoginPassword>user1</LoginPassword>
+        </Login>
+        <UserID>12</UserID>
+        <UserStreamChannelName>user1</UserStreamChannelName>
+        <UserInformation>
+            <FirstName>User1</FirstName>
+            <LastName>User1</LastName>
+            <Birthday>2013-06-24+02:00</Birthday>
+            <City>User1Stadt</City>
+            <Country>User1Land</Country>
+        </UserInformation>
+        <StreamChannel>
+            <ChannelTopic>StarcraftII</ChannelTopic>
+            <ChannelDescription>
+                <ChannelHeadline>Super duper Stream</ChannelHeadline>
+                <ChannelInformation>richtig geil</ChannelInformation>
+            </ChannelDescription>
+            <ChannelComments/>
+            <TotalViewerCount>0</TotalViewerCount>
+        </StreamChannel>
+    </User>
+</Users>
